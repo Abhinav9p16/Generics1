@@ -1,22 +1,9 @@
 public class PrintArray {
 
-    public static void print(Integer[] arr){
-        for(int element : arr){
+    public static <E> void print(E[] arr){
+        for(E element : arr){
             System.out.printf("%s, " ,element);
-        }
-        System.out.println();
-    }
-    public static void print(Double[] arr){
-        for(Double element : arr){
-            System.out.printf("%s, " ,element);
-        }
-        System.out.println();
-    }
-    public static void print(Character[] arr){
-        for(Character element : arr){
-            System.out.printf("%s, " ,element);
-        }
-        System.out.println();
+        }System.out.println();
     }
 
     public static void main(String args[]) {

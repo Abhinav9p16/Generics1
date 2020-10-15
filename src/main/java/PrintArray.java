@@ -30,12 +30,14 @@ public class PrintArray {
         Integer[] intArray = { 1, 2, 3, 4, 5 };
         Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
         Character[] charArray = {'H','E','L','L','O'};
+        String[] strArray = {"Apple", "Peach","Banana"};
         new PArray<>(intArray).print();
         new PArray<>(doubleArray).print();
         new PArray<>(intArray).getMaxElement(intArray);
         new PArray<>(doubleArray).getMaxElement(doubleArray);
-        //PrintArray.print(doubleArray);
-       // PrintArray.print(charArray);
+        new PArray<>(strArray).getMaxElement(strArray);
+        PrintArray.print(doubleArray);
+        PrintArray.print(charArray);
 
     }
 }

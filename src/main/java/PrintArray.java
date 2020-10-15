@@ -1,5 +1,3 @@
-import java.sql.PseudoColumnUsage;
-
 class PArray<T> {
     private T[] arr;
 
@@ -18,7 +16,7 @@ class PArray<T> {
         System.out.println();
     }
 
-    public static <E extends Comparable<E>> void getMaxElement(E[] arr) {
+    public static <E extends Comparable<E>> boolean getMaxElement(E[] arr) {
         E max = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i].compareTo(max) > 0) {
@@ -26,6 +24,7 @@ class PArray<T> {
             }
         }
         System.out.println("The max element is " + max);
+        return true;
     }
 static class PSortArray<T>{
     private T[] arr;

@@ -15,7 +15,7 @@ class PArray<T>{
               max = arr[i];
              }
           }
-        System.out.println(max);
+        System.out.println("The max element is " +max);
       }
 }
 public class PrintArray {
@@ -31,9 +31,11 @@ public class PrintArray {
         Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
         Character[] charArray = {'H','E','L','L','O'};
         new PArray<>(intArray).print();
+        new PArray<>(doubleArray).print();
         new PArray<>(intArray).getMaxElement(intArray);
-        PrintArray.print(doubleArray);
-        PrintArray.print(charArray);
+        new PArray<>(doubleArray).getMaxElement(doubleArray);
+        //PrintArray.print(doubleArray);
+       // PrintArray.print(charArray);
 
     }
 }
